@@ -44,7 +44,7 @@ $config['settings']['appType'] = array(
 	array('type' => 'others','name' => 'app_group_others','class' => 'icon-ellipsis-horizontal'),
 );
 $config['defaultPlugins'] = array(
-	'adminer','DPlayer','imageExif','jPlayer','officeLive','photoSwipe','picasa',//'pdfjs',
+	'adminer','DPlayer','imageExif','jPlayer','officeLive','photoSwipe','picasa','pdfjs',
 	'simpleClock','toolsCommon','VLCPlayer','webodf','yzOffice','zipView'
 );
 
@@ -52,14 +52,14 @@ $config['defaultPlugins'] = array(
 //初始化系统配置
 $config['settingSystemDefault'] = array(
 	'systemPassword'	=> rand_string(20),
-	'systemName'		=> "KodExplorer",
-	'systemDesc'		=> "——可道云.资源管理器",
+	'systemName'		=> "BPM&Kroschu",
+	'systemDesc'		=> "Pilot project of BPM system",
 	'pathHidden'		=> "Thumb.db,.DS_Store,.gitignore,.git",//目录列表隐藏的项
-	'autoLogin'			=> "0",			// 是否自动登录；登录用户为guest
+	'autoLogin'			=> "1",			// 是否自动登录；登录用户为guest
 	'needCheckCode'		=> "0",			// 登陆是否开启验证码；默认关闭
-	'firstIn'			=> "explorer",	// 登录后默认进入[explorer desktop,editor]
+	'firstIn'			=> "desktop",	// 登录后默认进入[explorer desktop,editor]
 
-	'newUserApp'		=> "trello,一起写office,微信,365日历,石墨文档,ProcessOn,计算器,icloud,OfficeConverter",
+	'newUserApp'		=> "",
 	'newUserFolder'		=> "document,desktop,pictures,music",
 	'newGroupFolder'	=> "share,doc,pictures",	//新建分组默认建立文件夹
 	'groupShareFolder'	=> "share",
@@ -80,9 +80,9 @@ $config['settingSystemDefault']['menu'] = array(
 	array('name'=>'explorer','type'=>'system','url'=>'index.php?explorer','target'=>'_self','use'=>'1'),
 	array('name'=>'editor','type'=>'system','url'=>'index.php?editor','target'=>'_self','use'=>'1')
 );
-if( strstr(I18n::defaultLang(),'zh') || strstr(I18n::getType(),'zh') ){
-	$config['settingSystemDefault']['newGroupFolder'] = "share,文档,图片资料,视频资料";
-	$config['settingSystemDefault']['newUserFolder'] = "我的文档,图片,视频,音乐";
+if( strstr(I18n::defaultLang(),'en') || strstr(I18n::getType(),'en') ){
+	$config['settingSystemDefault']['newGroupFolder'] = "share";
+	$config['settingSystemDefault']['newUserFolder'] = "";
 }
 
 //新用户初始化默认配置
@@ -111,7 +111,7 @@ $config['editorDefault'] = array(
 	"displayChar"	=> 0,		//是否显示特殊字符
 	"fontFamily"	=> "Menlo",	//字体
 	"keyboardType"	=> "ace",	//ace vim emacs
-	"autoSave"		=> 0,		//自动保存
+	"autoSave"		=> 1,		//自动保存
 );
 
 
@@ -120,48 +120,10 @@ $config['editorDefault'] = array(
 // http://monsoongale.iteye.com/blog/1044431
 $config['settingAll'] = array(
 	'language' => array(
-		"en"	=>	array("English","英语","English"),
-		"zh-CN"	=>	array("简体中文","简体中文","Simplified Chinese"),
-		"zh-TW"	=>	array("繁體中文","繁體中文","Traditional Chinese"),
-		"ar"	=>	array("العربية","'阿拉伯语","Arabic"),
-		"bg"	=>	array("Български","保加利亚语","Bulgarian"),
-		"bn"	=>	array("বাংলা","孟加拉语","Bengali"),
-		"ca"	=>	array("Català","加泰罗尼亚语","Catalan"),
-		"cs"	=>	array("Čeština","捷克语","Czech"),
-		"da"	=>	array("Dansk","丹麦语","Danish"),
-		"de"	=>	array("Deutsch","德语","German"),
-		"el"	=>	array("Ελληνικά","希腊语","Greek"),
-		"es"	=>	array("Español","西班牙语","Spanish"),
-		"et"	=>	array("Eesti","爱沙尼亚语","Estonian"),
-		"fa"	=>	array("فارسی","波斯语","Persian"),
-		"fi"	=>	array("suomen","芬兰语","Finnish"),
-		"fr"	=>	array("Français","法语","French"),
-		"gl"	=>	array("Galego","加利西亚语","Galician"),
-		"hi"	=>	array("हिन्दी","印地语","Hindi"),
-		"hr"	=>	array("Hrvatski","克罗地亚语","Croatian"),
-		"hu"	=>	array("Magyar","匈牙利语","Hungarian"),
-		"id"	=>	array("Bahasa Indonesia","印尼语","Indonesian"),
-		"it"	=>	array("Italiano","意大利语","Italian"),
-		"ja"	=>	array("日本語","日语","Japanese"),
-		"ko"	=>	array("한국어","韩语","Korean"),
-		"lt"	=>	array("Lietuvių","立陶宛语","Lithuanian"),
-		"nl"	=>	array("Nederlands","荷兰语","Dutch"),
-		"no"	=>	array("Norsk","挪威语","Norwegian"),
-		"pl"	=>	array("Polski","波兰语","Polish"),
-		"pt"	=>	array("Português","葡萄牙语","Portuguese"),
-		"ro"	=>	array("Limba Română","罗马尼亚语","Romanian"),
-		"ru"	=>	array("Русский язык","俄语","Russian"),
-		"si"	=>	array("සිංහල","僧伽罗语","Sinhala"),
-		"sk"	=>	array("Slovenčina","捷克斯洛伐克语","Czechoslovakia"),
-		"sl"	=>	array("Slovenski","斯洛文尼亚语'","Slovenian"),
-		"sr"	=>	array("Српски","塞尔维亚语","Serbian"),
-		"sv"	=>	array("Svenska","瑞典语","Swedish"),
-		"ta"	=>	array("த‌மிழ்","泰米尔语","Tamil"),
-		"th"	=>	array("ภาษาไทย","泰语","Thai"),
-		"tr"	=>	array("Türkçe","土耳其语","Turkish"),
-		"uk"	=>	array("Українська","乌克兰语","Ukrainian"),
-		"uz"	=>	array("O'zbekiston","乌兹别克语","Uzbek-cyrillic"),
-		"vi"	=>	array("Tiếng Việt","越南语","Vietnamese"),
+		"en"	=>	array("English","English"),
+		"uk"	=>	array("Українська","Ukrainian"),
+		"de"	=>	array("Deutsch","German"),
+        "ru"    =>	array("Русский язык","Russian"),
 	),//de el fi fr nl pt	d/m/Y H:i
 	
 	'themeall'		=> "mac,win10,win7,metro,metro_green,metro_purple,metro_pink,metro_orange,alpha_image,alpha_image_sun,alpha_image_sky,diy",
