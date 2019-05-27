@@ -7,10 +7,10 @@
 html,body{overflow: hidden;overflow-x: hidden;overflow-y: hidden;}
 body {
 	background:#f6f6f6;font-size: 13px; padding: 0px;margin: 0px; color:#666;
-	font-family:"Helvetica Neue","Helvetica","Microsoft Yahei","微软雅黑","Lantinghei SC","STXihei","WenQuanYi Micro Hei",Arial,sans-serif;
+	font-family:"Helvetica Neue","Helvetica","Microsoft Yahei","Lantinghei SC","STXihei","WenQuanYi Micro Hei",Arial,sans-serif;
 }
 body, input, textarea{-webkit-font-smoothing: antialiased;font-smoothing: antialiased;}
-input,button {font-family:"Helvetica Neue","Helvetica","Microsoft Yahei","微软雅黑","Lantinghei SC","STXihei","WenQuanYi Micro Hei",Arial,sans-serif;}
+input,button {font-family:"Helvetica Neue","Helvetica","Microsoft Yahei","Lantinghei SC","STXihei","WenQuanYi Micro Hei",Arial,sans-serif;}
 .loginbox{
 	box-shadow: 0px 20px 60px rgba(0,0,0,0.4),0px 0px 150px rgba(0,0,0,0.4);
 	width:428px;border-radius:4px;
