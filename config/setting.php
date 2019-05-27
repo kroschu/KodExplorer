@@ -72,7 +72,7 @@ $config['settingSystemDefault'] = array(
 	'currentVersion'	=> KOD_VERSION,
 
 	'wallpageDesktop'	=> "1",
-	'wallpageLogin'		=> "1,
+	'wallpageLogin'		=> "1",
 );
 //初始化默认菜单配置
 $config['settingSystemDefault']['menu'] = array(
