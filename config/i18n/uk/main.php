@@ -195,7 +195,7 @@ return array(
     "recycle_clear_success"          => "Порожній успіх сміття!",
     "recycle_clear_info"             => "Ви впевнені, що ви хочете повністю порожній сміття?",
     "fav_remove"                     => "Скасувати збір",
-    "remove_item"                    => "предмети",
+    "remove_item"                    => " елементи",
     "uploading"                      => "вивантаження",
     "upload_tips_more"               => "Занадто багато файлів, рекомендація стислій завантаження, а потім розпакувати онлайн!",
     "uploading_move"                 => "У процесі злиття передавайте ...",
@@ -428,7 +428,7 @@ return array(
     "clipboard"                      => "Перегляд буфера обміну",
     "clipboard_clear"                => "Порожній буфер обміну",
     "full_screen"                    => "повний екран",
-    "folder_info_item"               => "предмети",
+    "folder_info_item"               => " елементи",
     "folder_info_item_select"        => "обраний",
     "file_load_all"                  => "Двічі клацніть, щоб завантажити всі ......",
     "tips"                           => "підказка",
@@ -436,7 +436,7 @@ return array(
     "unziping"                       => "Розпакування ...",
     "moving"                         => "Мобільна робота ...",
     "remove_title"                   => "підтвердження видалення",
-    "remove_info"                    => "Підтвердити, щоб вилучити вибрані елементи?",
+    "remove_info"                    => "Чи підтверджуєте вилучення вибраного?",
     "remove_title_force"             => "постійно видалений",
     "remove_info_force"              => "Ви впевнені, що хочете назавжди видалити цей документ?",
     "name_isexists"                  => "Неправильно, ім'я вже існує!",
@@ -799,6 +799,6 @@ return array(
     "Explorer.UI.selectAppWarning"   => "Будь ласка, виберіть додаток!",
     "Explorer.UI.appTypeSupport"     => "Підтримується",
     "Explorer.UI.appTypeAll"         => "Усі програми",
-    "kodApp.oexe.edit"               => "Редагувати легке додаток",
-    "kodApp.oexe.open"               => "Відкрийте програму світла"
+    "kodApp.oexe.edit"               => "Редагувати віджет",
+    "kodApp.oexe.open"               => "Відкрити в додатку"
 );
