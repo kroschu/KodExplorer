@@ -667,7 +667,7 @@ return array(
     "code_theme"                     => "Coding Style",
     "font_size"                      => "Розмір шрифту",
     "confirm"                        => "Ви впевнені, що хочете це зробити?",
-    "button_ok"                      => "визначити",
+    "button_ok"                      => "Добре",
     "button_submit"                  => "уявити",
     "button_set"                     => "Встановити",
     "button_cancel"                  => "Скасувати",
