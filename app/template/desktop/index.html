@@ -26,9 +26,9 @@
 		<ul id="programs">
 			<li class='setting_help'><a href="#" onclick="core.setting('help');"><?php echo LNG('setting_help');?></a></li>
 			<li><div id="leftspliter"></div></li>
-			<li class='setting_homepage'><a href="#" onclick="core.openWindow('https://blog.uabp.ml/blog/single/admin/About-Me','<?php echo $L['my_document'];?>');">Про проект</a></li>
+			<li class='setting_homepage'><a href="#" onclick="core.openWindow('https://doc.treba.ml','<?php echo $L['my_document'];?>');">База знань</a></li>
 			<li class='setting_user'><a href="#" onclick="core.setting('user');"><?php echo LNG('setting_user');?></a></li>
-			<li class='setting_homepage'><a href="#" onclick="core.openWindow('http://blog.uabp.ml','<?php echo $L['my_document'];?>');">Блог проекту</a></li>
+			<li class='setting_homepage'><a href="#" onclick="core.openWindow('https://treba.ml/blog','<?php echo $L['блог проекту'];?>');">Блог проекту</a></li>
 		</ul>
 		<ul id="links">
 			<li class="icon"></li>
@@ -42,6 +42,12 @@
 			<li><a href="#" onclick="core.setting('theme');"><span><?php echo LNG('setting_theme');?></span></a></li>
 			<li><a href="./index.php?user/logout" style="margin-top:70px;"><span><?php echo LNG('ui_logout');?>></span></a></li>
 		</ul>
+		<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-title="KROBOT;)"
+  agent-id="c61dccae-b829-496b-b54e-f1b6aff6ec7e"
+  language-code="uk"
+></df-messenger>
 	</div>
 	<?php include(TEMPLATE.'common/footerCommon.html');?>
 	<script type="text/javascript">
