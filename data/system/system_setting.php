@@ -12,7 +12,7 @@
     "groupShareFolder": "share",
     "desktopFolder": "desktop",
     "versionType": "A",
-    "rootListUser": "0",
+    "rootListUser": "1",
     "rootListGroup": 0,
     "csrfProtect": 0,
     "currentVersion": "4.40",
@@ -201,6 +201,6 @@
         }
     },
     "globalIcp": "ТребаТак",
-    "globalCss": "",
-    "globalHtml": ""
+    "globalCss": ".copyright-content{display:none}",
+    "globalHtml": "<script>var html = document.getElementsByClassName(\"common-footer\")[0].innerHTML;document.getElementsByClassName(\"common-footer\")[0].innerHTML = html + \"ТребаТак  - всі права захищено\";<\/script>"
 }
